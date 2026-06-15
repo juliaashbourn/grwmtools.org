@@ -1,128 +1,260 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRWM Tools Inc. | 2026 Industrial Hardware & Building Material Node</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #1a1e24; color: #f3f4f6; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .font-mono-brutal { font-family: 'Syncopate', sans-serif; }
+        
+        /* 2026 Industrial Cyber-Slate Palette */
+        .text-acid { color: #ccff00; }
+        .bg-acid { background-color: #ccff00; }
+        .border-acid { border-color: #ccff00; }
+        
+        /* Technical Background Pattern Grid */
+        .tech-grid {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+        
+        /* Immersive Deep Scroll Reveal System */
+        .reveal { transition: all 1.3s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(60px) scale(0.98); }
+        .reveal.active { opacity: 1; transform: translateY(0) scale(1); }
+        
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #1a1e24; }
+        ::-webkit-scrollbar-thumb { background: #ccff00; }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .image-container img {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .image-container:hover img {
+            transform: scale(1.05) rotate(0.5deg);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased tech-grid">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- Top Monolithic Tactical Navigation Hub -->
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-20 bg(#1a1e24)/90 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-mono-brutal font-bold text-base md:text-xl uppercase tracking-tighter text-white">
+                GRWM <span class="text-acid">TOOLS</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400">
+                <a href="#hardware-matrix" class="hover:text-acid transition">01 / HARDWARE_GRID</a>
+                <a href="#registry-log" class="hover:text-acid transition">02 / COMPLIANCE_NODE</a>
+                <a href="#intake-terminal" class="hover:text-acid transition">03 / CONTACT_COMM</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Stage 1: Industrial Monolithic Gateway (Hero Component) -->
+    <section class="min-h-screen flex items-center relative px-6 md:px-20 z-10 pt-24">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center w-full">
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-3 border border-white/10 px-4 py-1.5 rounded-full mb-8 bg-white/5">
+                    <span class="w-2 h-2 bg-acid rounded-full animate-pulse"></span>
+                    <span class="font-semibold text-[10px] tracking-[0.2em] uppercase text-gray-300">HEAVY INDUSTRIAL SUPPLY // 2026</span>
+                </div>
+                <h1 class="text-4xl md:text-7xl font-mono-brutal font-bold text-white leading-[0.95] tracking-tighter mb-8 uppercase">
+                    HARDWARE <br>ENGINEERED <br><span class="text-acid">TO SCALE.</span>
+                </h1>
+                <p class="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed mb-12 font-light">
+                    GRWM Tools Inc. distributes high-grade structural building materials, heavy hardware components, and professional industrial equipment architectures optimized for global development frameworks.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#hardware-matrix" class="bg-acid text-black font-bold text-xs tracking-widest uppercase px-10 py-5 hover:bg-white hover:text-black transition duration-400 text-center rounded-none">
+                        Inspect Material Inventory ↓
+                    </a>
+                    <a href="tel:16067137215" class="border border-white/20 text-white font-bold text-xs px-10 py-5 hover:bg-white hover:text-black transition duration-400 text-center flex items-center justify-center gap-2">
+                        +1 (606) 713-7215
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Massive Structural Cyber-Slate Photo Layout -->
+            <div class="lg:col-span-5 relative h-[50vh] lg:h-[75vh] w-full p-2 bg-white/5 border border-white/10">
+                <div class="w-full h-full relative overflow-hidden image-container">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover filter contrast-125 brightness-75 grayscale hover:grayscale-0" alt="Advanced Industrial Building Structural Frame Construction">
+                </div>
+                <div class="absolute bottom-6 left-6 font-mono text-[9px] text-black bg-acid px-4 py-2 uppercase tracking-widest font-bold">// TECH_STATION_2026</div>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <!-- Stage 2: Corporate Verified Records Hub (Deep Scroll 1) -->
+    <section id="registry-log" class="py-48 px-6 md:px-20 bg-black/30 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 reveal">
+                <span class="text-acid font-bold tracking-widest text-xs block mb-3">// OFFICIAL DATA STORAGE</span>
+                <h2 class="text-2xl md:text-5xl font-mono-brutal font-bold text-white uppercase tracking-tighter">
+                    THE SYSTEM REGISTRY
+                </h2>
+            </div>
+            <div class="lg:col-span-8 reveal text-gray-400 text-base md:text-lg space-y-6 leading-relaxed font-light">
+                <p>
+                    Legally cataloged and verified under the strict governance directories of **input_file_0.png**, GRWM Tools Inc. operates an industrial logistics pipeline specializing in building material trading, hardware deployment, and premium landscaping equipment distribution channels.
+                </p>
+                <p>
+                    The enterprise coordinates supply line parameters, asset allocations, and structural distribution nodes directly from its corporate command station:
+                </p>
+                <div class="p-8 border-l-4 border-acid bg-white/5 max-w-2xl mt-10">
+                    <p class="text-gray-500 font-bold text-[10px] uppercase tracking-wider mb-2">// LOGISTICAL ROUTING COORDINATES:</p>
+                    <p class="text-xl font-bold tracking-tight text-white font-mono-brutal uppercase text-sm md:text-base">1537 Osprey Dr Hood River, OR, 97031-0043, United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <!-- Stage 3: Extreme Multi-Photo Heavy Grid Inventory (Deep Scroll 2) -->
+    <section id="hardware-matrix" class="py-48 px-6 md:px-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 text-left reveal">
+                <span class="text-acid font-bold uppercase tracking-widest text-xs block mb-2">// INVENTORY CLASSIFICATION</span>
+                <h2 class="text-3xl md:text-6xl font-mono-brutal font-bold text-white uppercase tracking-tighter">MATERIAL ARCHIVE</h2>
+                <p class="text-gray-500 max-w-md mt-4 font-light">A high-density continuous grid layout showcasing commercial building blocks, steel hardware tools, and automated garden machinery.</p>
+            </div>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+            <!-- Massive Multi-Photo Hardware Layout - 4 Columns Flat -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Material Node 1 -->
+                <div class="reveal flex flex-col justify-between group">
+                    <div class="image-container mb-6 h-[500px] bg-white/5">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-120 group-hover:grayscale-0 filter brightness-90" alt="Heavy Steel Professional Industrial Tools Components">
+                    </div>
+                    <div>
+                        <span class="text-acid font-bold text-xs block mb-1">01 // INDUSTRIAL TOOLS</span>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Hardware Stores Supply</h3>
+                    </div>
+                </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+                <!-- Material Node 2 -->
+                <div class="reveal flex flex-col justify-between group md:translate-y-12">
+                    <div class="image-container mb-6 h-[500px] bg-white/5">
+                        <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-120 group-hover:grayscale-0 filter brightness-90" alt="Premium Concrete and Industrial Building Raw Materials">
+                    </div>
+                    <div>
+                        <span class="text-white font-bold text-xs block mb-1">02 // STRUCTURAL INTEGRITY</span>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Building Materials</h3>
+                    </div>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <!-- Material Node 3 -->
+                <div class="reveal flex flex-col justify-between group lg:translate-y-6">
+                    <div class="image-container mb-6 h-[500px] bg-white/5">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-120 group-hover:grayscale-0 filter brightness-90" alt="Advanced Building Material and Garden Equipment Setup">
+                    </div>
+                    <div>
+                        <span class="text-acid font-bold text-xs block mb-1">03 // ECO LANDSCAPING</span>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Garden Equipment</h3>
+                    </div>
+                </div>
 
+                <!-- Material Node 4 -->
+                <div class="reveal flex flex-col justify-between group lg:translate-y-16">
+                    <div class="image-container mb-6 h-[500px] bg-white/5">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-120 group-hover:grayscale-0 filter brightness-90" alt="Industrial Logistics Retail Warehouse Management">
+                    </div>
+                    <div>
+                        <span class="text-white font-bold text-xs block mb-1">04 // RETAIL GRID</span>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Trade Distribution</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage 4: Monolithic Manifesto Industrial Billboard (Deep Scroll 3) -->
+    <section class="py-44 bg-acid text-black w-full my-32">
+        <div class="max-w-6xl mx-auto px-6 reveal text-center">
+            <span class="font-mono-brutal font-bold text-xs tracking-[0.4em] uppercase block mb-6">// LOGISTICAL DETERMINATION</span>
+            <h3 class="text-2xl md:text-5xl font-mono-brutal font-bold uppercase tracking-tighter leading-tight">
+                "WE DO NOT BUILD WEAK FRAMEWORKS. WE SUPPLY THE INDESTRUCTIBLE METRIC FOR MODERN EMPIRES."
+            </h3>
+        </div>
+    </section>
+
+    <!-- Stage 5: Secondary High-Volume Industrial Showcases (Deep Scroll 4) -->
+    <section class="py-44 px-6 md:px-20 bg-black/20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 reveal">
+                    <span class="text-acid font-bold text-xs block mb-2">// INFRASTRUCTURE STABILITY</span>
+                    <h2 class="text-2xl md:text-5xl font-mono-brutal font-bold text-white uppercase tracking-tighter mb-6">HEAVY TRADE OPERATIONS</h2>
+                    <p class="text-gray-400 leading-relaxed font-light mb-8">
+                        Our verified product allocations link structural raw materials with top-tier supply mechanics to empower enterprise factories and architectural firms globally.
+                    </p>
+                    <div class="w-20 h-[2px] bg-acid mb-6"></div>
+                    <span class="font-mono-brutal font-bold text-lg text-white">GRWM STRENGTH CODE</span>
+                </div>
+                
+                <!-- Additional 2 Large Photos for High Density Logistics Vibe -->
+                <div class="lg:col-span-7 grid grid-cols-2 gap-6">
+                    <div class="h-96 image-container shadow-2xl reveal">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover filter grayscale contrast-125" alt="Industrial Infrastructure Machinery and Engineering Works">
+                    </div>
+                    <div class="h-96 image-container shadow-2xl reveal translate-y-8">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover filter grayscale contrast-125" alt="Professional Builder Working on Heavy Material Framework">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage 6: Tactical Core Intake Gateway Footer (Deep Scroll 5) -->
+    <footer id="intake-terminal" class="py-32 px-6 md:px-20 bg-black relative z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-4xl md:text-7xl font-mono-brutal font-bold mb-12 text-white tracking-tighter uppercase">TRANSMIT.</h2>
+                <div class="space-y-12">
+                    <div>
+                        <span class="text-gray-600 font-bold text-[10px] tracking-widest block mb-2 uppercase">// CORE SUPPLY INTERFACE MAIL</span>
+                        <a href="mailto:contact@grwmtools.org" class="text-xl md:text-2xl font-mono-brutal font-bold text-acid hover:text-white transition tracking-tight break-all">contact@grwmtools.org</a>
+                    </div>
+                    <div>
+                        <span class="text-gray-600 font-bold text-[10px] tracking-widest block mb-2 uppercase">// SECURE SECURE VOICE ROUTING</span>
+                        <a href="tel:16067137215" class="text-xl md:text-2xl font-mono-brutal font-bold text-white hover:text-acid transition tracking-tight">+1 (606) 713-7215</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end mt-12 lg:mt-0">
+                <span class="text-gray-600 font-bold text-[10px] tracking-widest block mb-2 uppercase">// PHYSICAL DISTRIBUTION HUB</span>
+                <p class="text-base text-gray-400 font-mono-brutal tracking-tight leading-loose uppercase">
+                    1537 Osprey Dr Hood River<br>
+                    OR, 97031-0043<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-28 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between text-[9px] text-gray-600 uppercase tracking-widest font-bold">
+            <p>&copy; 2026 GRWM TOOLS INC. INDUSTRIAL CAPACITY ABSOLUTE.</p>
+            <p>OREGON CENTRAL VECTOR // USA</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Smooth Fluid Transitions -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.02 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
